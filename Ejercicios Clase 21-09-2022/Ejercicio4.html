@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+
+    <h3>Enunciado:</h3>
+    <p>Definir una función que determine si la cadena de texto que se le pasa como parámetro es un palíndromo, es decir,
+        si se lee de la misma forma desde la izquierda y desde la derecha. Ejemplo de palíndromo complejo: "La ruta nos
+        aporto otro paso natural".</p>
+
+    <h3>Ejercicio</h3>
+
+    <script>
+
+        var cadena = prompt("Introduce una cadena: ");
+        var resultado = comprueba(cadena);
+        alert("La cadena: " + "'" + cadena + "'" + resultado);
+
+
+        function comprueba(cadena) {
+
+            cadena = cadena.replace(" ", "");
+            var cadenaMinus = cadena.toLocaleLowerCase();
+            var arrayCadena = cadenaMinus.split("");
+            var res = "";
+
+            for (var x = arrayCadena.length - 1; x >= 0; x--) {
+
+                res = res + arrayCadena[x];
+
+            }
+
+            if (cadenaMinus === res) {
+                res = " es palíndroma";
+            } else {
+                res = " no es palíndroma";
+            }
+
+            return res;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
