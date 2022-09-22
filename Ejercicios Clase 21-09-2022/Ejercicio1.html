@@ -19,7 +19,17 @@
     <h3>Ejercicio</h3>
 
     <script>
-        var numero = prompt("Introduce un número y se mostrará su factorial");
+
+        var correcto = false;
+        do {
+            var numero = prompt("Introduce un número y se mostrará su factorial");
+            if (isNaN(numero)) {
+                correcto = false;
+            } else {
+                correcto = true;
+            }
+        } while (!correcto);
+
         var resultado = 1;
 
         for (var x = 1; x <= numero; x++) {

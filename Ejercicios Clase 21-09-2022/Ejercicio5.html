@@ -17,9 +17,30 @@
 
     <script>
 
-        
-        while(){
+        var correcto = false;
+        do {
+            var maximo = prompt("Introduce el límite: ");
+            if (isNaN(maximo)) {
+                correcto = false;
+            } else {
+                correcto = true;
+            }
+        } while (!correcto);
 
+
+        var minimo = 1;
+        var contador = 0;
+
+        for (var x = minimo; x <= maximo; x++) {
+            for (var y = minimo; y <= x; y++) {
+                if (x % y == 0) {
+                    contador++;
+                }
+            }
+            if (contador == 2) {
+                document.write(x+", ");
+            }
+            contador = 0;
         }
 
     </script>

@@ -19,7 +19,17 @@
 
     <script>
 
-        var numero = prompt("Introduce un número entero:");
+        var correcto = false;
+        do {
+            var numero = prompt("Introduce un número entero:");
+            if (isNaN(numero)) {
+                correcto = false;
+            } else {
+                correcto = true;
+            }
+        } while (!correcto);
+
+
         var resultado = parImpar(numero);
         alert("El número es: " + resultado);
 
