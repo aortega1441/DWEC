@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_Tablas_Bucles</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        document.write("<table>");
+
+        document.write("<tr>");
+
+        //TABLA DE MULTIPLICAR DEL 7
+        document.write("<td>");
+
+        document.write("TABLA DE MULTIPLICAR DEL 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>");
+        pro7 = 0;
+        for (var x = 1; x <= 10; x++) {
+            pro7 = 7 * x;
+            document.write("7 x " + x + " = " + pro7 + "<br>");
+        }
+
+        document.write("</td>");
+
+        //TABLA DE SUMAR DEL 8
+        document.write("<td>");
+
+        document.write("TABLA DE SUMAR DEL 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>");
+        sum8 = 0;
+        x = 1;
+        while (x <= 10) {
+            sum8 = 8 + x;
+            document.write("8 + " + x + " = " + sum8 + "<br>");
+            x++;
+        }
+
+        document.write("</td>");
+
+        //TABLA DE DDIVIDIR DEL 9
+        document.write("<td>");
+
+        document.write("TABLA DE DIVIDIR DEL 9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>");
+        div9 = 0;
+        x = 1;
+
+        do {
+            div9 = 9 / x;
+            document.write("9 / " + x + " = " + div9 + "<br>");
+            x++;
+        } while (x <= 10);
+
+        document.write("</td>");
+
+        document.write("</tr>");
+
+        document.write("</table>");
+
+
+        document.write("<br><br>");
+        //DESPLAZAMIENTOS
+
+        document.write("<table ");
+
+        document.write("<tr>");
+
+        document.write("<td>");
+        document.write("<p></p>");
+        document.write("</td>");
+
+        document.write("<th>");
+        document.write("125 / 8 con desplazamiento de bits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>");
+        document.write(125 >> 3);
+        document.write("</th>");
+
+        document.write("<th>");
+        document.write("40 x 4 con desplazamiento de bits<br>");
+        document.write(40 << 2);
+        document.write("</th>");
+
+        document.write("</tr>");
+
+        document.write("<tr>");
+
+        document.write("<td>");
+        document.write("<pre>                            </pre>");
+        document.write("</td>");
+
+        document.write("<th>");
+        document.write("25 / 2 con desplazamiento de bits&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>");
+        document.write(25 >> 1);
+        document.write("</th>");
+
+        document.write("<th>");
+        document.write("10 x 16 con desplazamiento de bits<br>");
+        document.write(10 << 4);
+        document.write("</th>");
+
+        document.write("</tr>");
+
+        document.write("</table>");
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
