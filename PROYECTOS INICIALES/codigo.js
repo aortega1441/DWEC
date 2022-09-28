@@ -1,1 +1,0 @@
-alert("Empezamos con JavaScript");
