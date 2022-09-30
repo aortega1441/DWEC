@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function inicializar() {
+            document.getElementById("gato1").onclick = crearNueva;
+            document.getElementById("gato2").onclick = crearNueva;
+            document.getElementById("gato3").onclick = crearNueva;
+            document.getElementById("gato4").onclick = crearNueva;
+            document.getElementById("cerrar-ventana").onclick = cerrarNueva;
+
+        }
+
+        var nuevaVentana;
+
+        function crearNueva() {
+            nuevaVentana = window.open("", "", "height=400, width=700");
+            nuevaVentana.document.write("<html><h1>Imagen ampliada</h1>");
+            nuevaVentana.document.write("<img src=\"/Images/gato1.jpg\"><br><br>");
+            nuevaVentana.document.write("<input type=\"button\" id=\"cerrar-ventana\" value=\"Cerrar Nueva Ventana\" onclick=\"window.close()\"><br><br>");
+            nuevaVentana.document.write("</html>");
+        }
+
+        function crearNueva2() {
+            nuevaVentana = window.open("", "", "height=400, width=700");
+            nuevaVentana.document.write("<html><h1>Imagen ampliada</h1>");
+            nuevaVentana.document.write("<img src=\"/Images/gato2.jpg\"><br><br>");
+            nuevaVentana.document.write("<input type=\"button\" id=\"cerrar-ventana\" value=\"Cerrar Nueva Ventana\" onclick=\"window.close()\"><br><br>");
+            nuevaVentana.document.write("</html>");
+        }
+
+        function crearNueva3() {
+            nuevaVentana = window.open("", "", "height=400, width=700");
+            nuevaVentana.document.write("<html><h1>Imagen ampliada</h1>");
+            nuevaVentana.document.write("<img src=\"/Images/gato3.jpg\"><br><br>");
+            nuevaVentana.document.write("<input type=\"button\" id=\"cerrar-ventana\" value=\"Cerrar Nueva Ventana\" onclick=\"window.close()\"><br><br>");
+            nuevaVentana.document.write("</html>");
+        }
+
+        function crearNueva4() {
+            nuevaVentana = window.open("", "", "height=400, width=700");
+            nuevaVentana.document.write("<html><h1>Imagen ampliada</h1>");
+            nuevaVentana.document.write("<img src=\"/Images/gato4.jpg\"><br><br>");
+            nuevaVentana.document.write("<input type=\"button\" id=\"cerrar-ventana\" value=\"Cerrar Nueva Ventana\" onclick=\"window.close()\"><br><br>");
+            nuevaVentana.document.write("</html>");
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Página con miniaturas de imágenes</h1>
+    <table>
+
+        <tr>
+            <td><a href="" onclick="crearNueva()"><img src="/Images/gato1.jpg" alt="gato1" width="200"
+                        height="200"></a></td>
+            <td><a href="" onclick="crearNueva2()"><img src="/Images/gato2.jpg" alt="gato2" width="200"
+                        height="200"></a></td>
+            <td><a href="" onclick="crearNueva3()"><img src="/Images/gato3.jpg" alt="gato3" width="200"
+                        height="200"></a></td>
+            <td><a href="" onclick="crearNueva4()"><img src="/Images/gato4.jpg" alt="gato4" width="200"
+                        height="200"></a></td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
