@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var opciones = "left=100,top=100,width=250,height=150", i = 0;
+        mi_ventana = window.open("", "", opciones);
+        mi_ventana.document.write("Una prueba de abrir ventanas");
+        mi_ventana.moveTo(400, 100);
+        moverventana();
+
+        function moverventana() {
+            mi_ventana.moveBy(5, 5);
+            i++;
+            if (i < 20) {
+                setTimeout('moverventana()', 100);
+            } else {
+                mi_ventana.close();
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
