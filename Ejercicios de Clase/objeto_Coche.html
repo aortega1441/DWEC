@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Coche</title>
+</head>
+
+<body>
+
+    <script>
+
+        function Coche(codigo, nombre, precio) {
+
+            this.codigo = codigo;
+            this.nombre = nombre;
+            this.precio = precio;
+
+        }
+
+        Coche.prototype.imprimeDatos = function () {
+            return (this.codigo + ", " + this.nombre + ", " + this.precio);
+        }
+
+        var coche = new Coche("11401", "Renault Clio", "12500");
+
+        document.write(coche.imprimeDatos());
+
+    </script>
+
+</body>
+
+</html>

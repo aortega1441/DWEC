@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array metodo sin()</title>
+</head>
+
+<body>
+
+    <script>
+
+        let filtrado = [1, 2, 3, 4, 5];
+
+        console.log(filtrado);
+
+        Array.prototype.sin = function (parametro) {
+
+            // for (let x = 0; x < filtrado.length; x++) {
+
+            //     if (filtrado[x] == parametro) {
+            //         filtrado.splice(x, 1);
+            //     }
+
+            // }
+
+            var posicion = filtrado.indexOf(parametro);
+            filtrado.splice(posicion, 1);
+
+            return filtrado;
+
+        }
+
+        console.log(filtrado.sin(4));
+
+    </script>
+
+</body>
+
+</html>

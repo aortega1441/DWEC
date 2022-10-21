@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        /*
+                String.prototype.truncar=function(parametro){
+        
+        
+                    if (isNaN(parametro) || parametro>this.length) {
+                        
+                        console.log("ERROR EN EL PARAMETRO");
+                        return this;
+                    }else{
+        
+                        return this.substring(0,parametro);
+                    }
+                    
+        
+        
+                }
+                */
+
+        String.prototype.truncar = function (parametro, parametro2) {
+
+
+            if (parametro2 == null) {
+
+                if (isNaN(parametro) || parametro > this.length) {
+
+                    console.log("ERROR EN EL PARAMETRO");
+                    return this;
+                } else {
+
+                    return this.substring(0, parametro);
+                }
+
+
+
+            } else {
+
+                if (isNaN(parametro) || parametro > this.length || parametro < parametro2.length) {
+
+                    console.log("ERROR EN EL PARAMETRO");
+
+                    return this;
+
+                } else {
+
+                    let cadena;
+
+                    cadena = this.substring(0, parametro - parametro2.length) + parametro2;
+
+
+                    return cadena;
+
+                }
+
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <script>
+
+        let cadena = "hola mundo";
+
+        let cadena2 = cadena.truncar("8", "...");
+
+        console.log(cadena2);
+
+    </script>
+</body>
+
+</html>

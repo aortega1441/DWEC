@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Producto Alimenticio</title>
+</head>
+
+<body>
+
+    <script>
+
+        function Producto(codigo, nombre, precio) {
+
+            this.codigo = codigo;
+            this.nombre = nombre;
+            this.precio = precio;
+
+        }
+
+        Producto.prototype.imprimeDatos = function () {
+            return (this.codigo + ", " + this.nombre + ", " + this.precio + "€");
+        }
+
+        var producto1 = new Producto("11401", "Plátano", "1");
+        var producto2 = new Producto("11402", "Manzana", "1.5");
+        var producto3 = new Producto("11403", "Pera", "2");
+
+        let arrayProductos = new Array(producto1, producto2, producto3);
+
+        for (var x = 0; x < arrayProductos.length; x++) {
+            document.write(arrayProductos[x].imprimeDatos() + "<br>");
+        }
+
+    </script>
+
+</body>
+
+</html>
