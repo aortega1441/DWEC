@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+</head>
+
+    <script>
+
+        function mostrarDatos(){
+
+            var formulario = document.getElementById("formulario");
+            var pagina = formulario.action;
+
+            var nombre = document.getElementById("nombre").value;
+            alert(nombre+" te diriges a "+pagina);
+
+            console.log(nombre+" "+pagina);
+
+
+        }
+
+    </script>
+
+<body>
+
+    <form action="https://cdpjosecabrera.es/" id="formulario">
+
+        <label for="">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <br>
+
+        <input type="submit" onclick="mostrarDatos()">
+
+    </form>
+    
+</body>
+</html>

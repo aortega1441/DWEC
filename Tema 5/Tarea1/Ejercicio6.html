@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+
+<script>
+
+    function muestraNombre(opcion) {
+
+        switch (opcion.value) {
+
+            case "DAW":
+                opcion.value = "Despliegue de aplicaciones Web";
+                break;
+            case "DIW":
+                opcion.value = "Diseño Interfaces Web";
+                break;
+            case "DAWES":
+                opcion.value = "Desarrollo de Aplicaciones en Entorno Servidor";
+                break;
+            case "DAWEC":
+                opcion.value = "Desarrollo de Aplicaciones en Entorno Cliente";
+                break;
+            case "HLC":
+                opcion.value = "Horas de Libre Configuración";
+                break;
+            case "EIE":
+                opcion.value = "Empresa e Iniciativa Emprendedora";
+                break;
+
+        }
+
+    }
+
+</script>
+
+<body>
+
+    <input type="button" value="DAW" ondblclick="muestraNombre(this)">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="DIW" ondblclick="muestraNombre(this)">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="DAWEC" ondblclick="muestraNombre(this)">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="DAWES" ondblclick="muestraNombre(this)">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="HLC" ondblclick="muestraNombre(this)">&nbsp;&nbsp;&nbsp;
+    <input type="button" value="EIE" ondblclick="muestraNombre(this)">
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio7</title>
+</head>
+
+<script>
+
+    function cambiaColor(x) {
+
+        var boton = x.value;
+
+        switch (boton) {
+
+            case "Boton 1":
+                x.style.backgroundColor = "blue";
+                break;
+            case "Boton 2":
+                x.style.backgroundColor = "yellow";
+                break;
+            case "Boton 3":
+                x.style.backgroundColor = "red";
+                break;
+            case "Boton 4":
+                x.style.backgroundColor = "green";
+                break;
+
+        }
+
+    }
+
+</script>
+
+<body>
+
+    <input type="text" style="background-color: blue;" onmouseover="cambiaColor(document.getElementById('boton1'))">
+    <input type="button" value="Boton 1" id="boton1">
+    <br><br>
+    <input type="text" style="background-color: yellow;" onmouseover="cambiaColor(document.getElementById('boton2'))">
+    <input type="button" value="Boton 2" id="boton2">
+    <br><br>
+    <input type="text" style="background-color: red;" onmouseover="cambiaColor(document.getElementById('boton3'))">
+    <input type="button" value="Boton 3" id="boton3">
+    <br><br>
+    <input type="text" style="background-color: green;" onmouseover="cambiaColor(document.getElementById('boton4'))">
+    <input type="button" value="Boton 4" id="boton4">
+
+</body>
+
+</html>

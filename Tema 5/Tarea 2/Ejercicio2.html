@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+
+    <style>
+        #container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .opciones {
+
+            margin: 5px;
+
+        }
+
+        p{
+
+            padding: 2em;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+
+        }
+    </style>
+</head>
+
+<script>
+
+    function cambiarFuente() {
+
+        document.getElementById("texto").style.fontFamily = document.getElementById("fuente").value;
+
+    }
+
+    function cambiarEstilo() {
+
+        document.getElementById("texto").style.fontStyle = document.getElementById("estilo").value;
+
+    }
+
+    function cambiarColor() {
+
+        document.getElementById("texto").style.color = document.getElementById("color").value;
+
+    }
+
+    function cambiarTamano() {
+
+        document.getElementById("texto").style.fontSize = document.getElementById("tamano").value + document.getElementById("puntuacion").value;
+
+    }
+
+</script>
+
+<body>
+
+    <div id="container">
+
+        <div class="opciones">
+            <label for="">Fuente</label>
+            <br>
+            <select name="" id="fuente" size="6" onclick="cambiarFuente()">
+
+                <option value="Times">Times</option>
+                <option value="Arial">Arial</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Comic Sans MS">Comic</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Courier">Courier</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="opciones">
+            <label for="">Estilo</label>
+            <br>
+            <select name="" id="estilo" size="2" onclick="cambiarEstilo()">
+
+                <option value="normal">Normal</option>
+                <option value="italic">Cursiva</option>
+
+            </select>
+        </div>
+
+        <div class="opciones">
+            <label for="">Color</label>
+            <br>
+            <select name="" id="color" size="6" onclick="cambiarColor()">
+
+                <option value="black">Negro</option>
+                <option value="red">Rojo</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+                <option value="yellow">Amarillo</option>
+                <option value="#E0B0FF">Malva</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="opciones">
+            <label for="">Tamaño</label>
+            <br>
+            <select name="" id="tamano" size="6" onclick="cambiarTamano()">
+
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+
+            </select>
+
+            <select name="" id="puntuacion" size="2" onclick="cambiarTamano()">
+
+                <option value="em">Puntos</option>
+                <option value="px">Pixeles</option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+    <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, sequi!</p>
+
+</body>
+
+</html>

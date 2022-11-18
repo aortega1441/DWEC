@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+</head>
+
+<script>
+
+    function cambiaTexto() {
+
+        var texto = document.getElementById("texto");
+        texto.style.color = "blue";
+        texto.style.fontSize = "50px";
+
+    }
+
+    function cambiaTexto2() {
+
+        var texto = document.getElementById("texto");
+        texto.style.color = "black";
+        texto.style.fontSize = "16px";
+
+    }
+
+</script>
+
+<body>
+
+    <p id="texto" onmouseover="cambiaTexto()" onmouseout="cambiaTexto2()">Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Corporis ducimus assumenda consequatur maiores expedita
+        voluptatem similique sapiente, quae necessitatibus quam mollitia minus numquam doloremque! Voluptatum animi
+        aliquam et ea quia.</p>
+
+</body>
+
+</html>

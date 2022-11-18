@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+
+<script>
+
+    function mostrarDatos(){
+
+        var cadena = document.getElementById("cadena").value;
+
+        var cadena2 = document.getElementById("mayus");
+        cadena2.value = cadena.toUpperCase();
+
+        var cadena3 = document.getElementById("minus");
+        cadena3.value = cadena.toLowerCase();
+
+    }
+
+</script>
+
+<body>
+
+    <form action="">
+
+        <label for="">Cadena:</label>
+        <input type="text" id="cadena">
+        <br>
+        <br>
+        <label for="">Cadena en mayúsculas:</label>
+        <input type="text" id="mayus" disabled style="color: red;">
+        <br>
+        <label for="">Cadena en minúsculas:</label>
+        <input type="text" id="minus" disabled style="color: blue;">
+        <br>
+        <br>
+        <input type="button" value="Mostrar" onclick="mostrarDatos()">
+
+    </form>
+    
+</body>
+</html>
